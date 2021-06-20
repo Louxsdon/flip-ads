@@ -183,7 +183,11 @@ export default function Home() {
             <button className="btn bg-white">Latest Ads</button>
             <button className="btn bg-white">Ending Soon</button>
           </div>
-          <ProductCat heading="Electronics" variant="warning-500" textColor="">
+          <ProductCat
+            heading="Electronics"
+            variant="bg-warning-500"
+            textColor=""
+          >
             {electronics.map(({ id, name, img, location, category }) => (
               <ProductCard
                 key={id}
@@ -196,7 +200,7 @@ export default function Home() {
           </ProductCat>
           <ProductCat
             heading="Furnitures"
-            variant="primary-500"
+            variant="bg-primary-500"
             textColor="text-white"
           >
             {furnitures.map(({ id, name, img, location, category }) => (

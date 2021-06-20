@@ -20,7 +20,7 @@ export default function MiniHeader({ heading, tagline }) {
         action=""
         className="bg-gray-200 py-4 px-8 w-full md:w-1/2 m-auto flex flex-col md:flex-row items-center md:space-x-6 justify-center md:absolute -bottom-12 left-1/2 transform md:-translate-x-1/2"
       >
-        <div className="input-addon">
+        <div className="input-addon w-full">
           <MdSearch className="input-icon" />
           <input
             type="text"
@@ -28,7 +28,7 @@ export default function MiniHeader({ heading, tagline }) {
             placeholder="Searching for..."
           />
         </div>
-        <div className="input-addon">
+        <div className="input-addon w-full">
           <MdCollectionsBookmark className="input-icon" />
           <input
             type="text"

@@ -5,7 +5,9 @@ export default function ProductCat({ variant, textColor, heading, children }) {
   return (
     <div className="rounded overflow-hidden mt-12 shadow-sm">
       <div
-        className={` bg-${variant} ${textColor} flex justify-between px-6 py-3 font-semibold`}
+        className={`${
+          variant !== "" || variant !== null ? variant : "bg-primary-400"
+        } ${textColor} flex justify-between px-6 py-3 font-semibold`}
       >
         <h3 className="text-lg">{heading}</h3>
         <Link href="">
@@ -25,15 +27,17 @@ export function ProductSalesCard({ variant, textColor, heading, children }) {
   return (
     <div className="rounded overflow-hidden mt-12 shadow-sm">
       <div
-        className={` bg-${variant} ${textColor} flex justify-between px-6 py-3 font-semibold`}
+        className={`${
+          variant !== "" || variant !== null ? variant : "bg-primary-400"
+        } ${textColor} flex justify-between items-center px-6 py-3 font-semibold`}
       >
         <h3 className="text-lg">{heading}</h3>
-        <div className="relative space-x-4 flex items-center">
+        <div className="relative space-x-4 flex flex-col justify-center md:flex-row items-center">
           <span className="font-semibold">Sort by: </span>
           <form action="">
             <div className="">
               <select
-                className={`bg-${variant} border px-4 py-1 focus:outline-none`}
+                className={`${variant} border px-4 py-1 focus:outline-none`}
                 name=""
                 id=""
               >

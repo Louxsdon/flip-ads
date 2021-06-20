@@ -33,8 +33,8 @@ export default function Sell() {
             <button className="btn bg-white">Vehicles</button>
           </div>
           <ProductSalesCard
-            heading="Hot Selling Products"
-            variant="primary-300"
+            heading="Hot Sales"
+            variant="bg-primary-400"
             textColor="text-white"
           >
             {electronics.map(({ id, name, img, location, category }) => (
@@ -58,7 +58,7 @@ export default function Sell() {
           </ProductSalesCard>
           <ProductCat
             heading="Ending Soon"
-            variant="orange-400"
+            variant="bg-orange-400"
             textColor="text-white"
           >
             {furnitures.map(({ id, name, img, location, category }) => (
