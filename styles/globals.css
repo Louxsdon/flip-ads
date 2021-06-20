@@ -66,12 +66,12 @@
 .out {
   @apply border-2;
 }
-.active {
-  @apply text-white;
+/* .active 
+   @apply text-white;
 }
 .active1 {
   @apply text-gray-700;
-}
+} */
 .input:focus {
   @apply outline-none;
 }
@@ -114,13 +114,13 @@ ul .list-item:hover {
 }
 
 .navbar {
-  @apply sticky top-0 z-30 flex justify-between items-center py-3 px-5 bg-white shadow-sm;
+  @apply sticky top-0 z-30 flex justify-between items-center px-5 py-2 bg-white shadow-sm;
 }
 .navbar .nav-link {
-  @apply px-4 py-2;
+  @apply px-4 py-4;
 }
-.nav-link .active {
-  @apply font-semibold text-black !important;
+.navbar .nav-link.active-link {
+  @apply bg-primary-50 font-semibold text-primary-500 h-full;
 }
 
 .side-drawer {
@@ -146,6 +146,13 @@ ul .list-item:hover {
   align-items: center;
   text-align: center;
   /* justify-content: center; */
+}
+
+.side-link {
+  @apply block py-2 px-8;
+}
+.side-link.active {
+  @apply bg-primary-50 font-semibold text-primary-500 h-full;
 }
 
 .separator::before,

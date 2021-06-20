@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { IoClose, IoMenuOutline } from "react-icons/io5";
 import { LoginModal, RegisterModal } from "./Modals";
+import { Sidebar } from "./Sidebar";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -24,21 +26,11 @@ export default function Navbar() {
         </div>
 
         <div className="nav-items hidden md:block">
-          <Link href="/">
-            <a className="nav-link">Home</a>
-          </Link>
-          <Link href="/how-it-works">
-            <a className="nav-link">How it works</a>
-          </Link>
-          <Link href="/sell">
-            <a className="nav-link">Sell</a>
-          </Link>
-          <Link href="/about">
-            <a className="nav-link">About Us</a>
-          </Link>
-          <Link href="/contact">
-            <a className="nav-link">Contact Us</a>
-          </Link>
+          <NavLink href="/">Home</NavLink>
+          <NavLink href="/how-it-works">How It Works</NavLink>
+          <NavLink href="/sell">Sell</NavLink>
+          <NavLink href="/about">About Us</NavLink>
+          <NavLink href="/contact">Contact Us</NavLink>
         </div>
         <div className="button-links hidden md:block justify-self-end space-x-3">
           <button
@@ -67,6 +59,8 @@ export default function Navbar() {
           )}
         </button>
       </nav>
+
+      <Sidebar openDrawer={openDrawer} drawerOpen={setOpenDrawer} />
 
       <LoginModal
         visible={showLoginModal}
