@@ -24,17 +24,17 @@ export default function Sell() {
         ------ SALES PRODUCTS --------
          ********************** */}
         <div id="ads" className="container pt-24">
-          <div className="flex justify-center items-center space-x-5 py-8">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-4  py-6">
             <button className="btn bg-white">Latest Ads</button>
             <button className="btn bg-white">Ending Soon</button>
-            <button className="btn bg-white">Latest Ads</button>
-            <button className="btn bg-white">Ending Soon</button>
-            <button className="btn bg-white">Latest Ads</button>
-            <button className="btn bg-white">Ending Soon</button>
+            <button className="btn bg-white">Most Popular</button>
+            <button className="btn bg-white">Electronics</button>
+            <button className="btn bg-white">Furnitures</button>
+            <button className="btn bg-white">Vehicles</button>
           </div>
           <ProductSalesCard
             heading="Hot Selling Products"
-            variant="primary-400"
+            variant="primary-300"
             textColor="text-white"
           >
             {electronics.map(({ id, name, img, location, category }) => (
@@ -58,7 +58,7 @@ export default function Sell() {
           </ProductSalesCard>
           <ProductCat
             heading="Ending Soon"
-            variant="orange-500"
+            variant="orange-400"
             textColor="text-white"
           >
             {furnitures.map(({ id, name, img, location, category }) => (

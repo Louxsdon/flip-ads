@@ -13,7 +13,7 @@ export default function ProductCat({ variant, textColor, heading, children }) {
         </Link>
       </div>
       <div className="body bg-white p-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2">
           {children}
         </div>
       </div>
@@ -49,7 +49,7 @@ export function ProductSalesCard({ variant, textColor, heading, children }) {
         </div>
       </div>
       <div className="body bg-white p-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2">
           {children}
         </div>
       </div>

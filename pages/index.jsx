@@ -101,7 +101,7 @@ export default function Home() {
       </header>
 
       <main className="bg-primary-100">
-        <div className="container py-12 px-4 bg-primary-50" id="ads">
+        <div className="container py-12 px-4" id="ads">
           <div className="catalogs flex justify-center items-center space-x-5 md:space-x-32">
             <div className="cat-1 flex items-center flex-col">
               <div className="cat-card">

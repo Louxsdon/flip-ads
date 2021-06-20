@@ -31,7 +31,7 @@ export default function ProductCard({ name, image, category, location }) {
           </div>
           <h4 className="font-semibold">{name}</h4>
           <div className="flex items-center justify-between text-gray-400">
-            <button className="btn primary-alt ">Call for price</button>
+            <button className="btn primary-alt px-2">Call for price</button>
             <div className="flex items-center space-x-2">
               <MdRefresh />
               <MdFavorite className="text-red-200" />
