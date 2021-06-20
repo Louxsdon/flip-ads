@@ -24,7 +24,9 @@ export function Sidebar({ openDrawer, drawerOpen }) {
       <div className={`side-drawer ${openDrawer ? "open" : ""}`}>
         <div className=" py-14 px-10 bg-primary-50 flex justify-center items-center flex-col">
           <h2 className="text-3xl font-semibold ">FliPit</h2>
-          <p className="text-gray-400 mb-4">Sell, Buy and earn mponey</p>
+          <p className="text-gray-400 mb-4 text-center">
+            Sell, Buy and earn money
+          </p>
           <div className="flex space-x-4">
             <FaFacebook />
             <FaTwitter />
