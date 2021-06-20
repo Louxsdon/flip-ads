@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button styles */
+.btn {
+  @apply py-2 px-4 rounded focus:outline-none transform hover:scale-105 transition ease-in duration-300;
+}
+
+.btn.rounded-all {
+  @apply py-2 px-4 rounded-full focus:outline-none;
+}
+.btn.fluid {
+  @apply w-full;
+}
+.btn.primary {
+  @apply bg-primary-500 text-primary-50 focus:ring-primary-200 focus:ring-2;
+}
+.btn.primary-alt {
+  @apply bg-primary-50 text-primary-500 focus:ring-primary-200 focus:ring-1;
+}
+.btn.success {
+  @apply bg-success-500 text-success-50 focus:ring-success-200 focus:ring-2;
+}
+.btn.success-alt {
+  @apply bg-success-50 text-success-500 focus:ring-success-200 focus:ring-1;
+}
+.btn.danger {
+  @apply bg-danger-500 text-danger-50 focus:ring-danger-200 focus:ring-2;
+}
+.btn.danger-alt {
+  @apply bg-danger-50 text-danger-500 focus:ring-danger-200 focus:ring-1;
+}
+.btn.info {
+  @apply bg-info-500 text-info-50 focus:ring-info-200 focus:ring-2;
+}
+.btn.info-alt {
+  @apply bg-info-50 text-info-500 focus:ring-info-200 focus:ring-1;
+}
+.btn.warning {
+  @apply bg-warning-500 text-warning-50 focus:ring-warning-200 focus:ring-2;
+}
+.btn.warning-alt {
+  @apply bg-warning-50 text-warning-500 focus:ring-warning-200 focus:ring-1;
+}
+
+/* Form styles */
+.input-group {
+  @apply pb-3;
+}
+.input-control {
+  @apply w-full border border-gray-200 text-sm rounded py-2 px-3 text-gray-600 placeholder-gray-400 focus:outline-none focus:border-primary-500;
+}
+.input-control.rounded-all {
+  @apply rounded-full;
+}
+.input-addon {
+  @apply relative items-center;
+}
+.input-addon input {
+  @apply pl-8;
+}
+.input-addon .input-icon {
+  @apply absolute text-lg top-1/2 transform -translate-y-1/2 left-3 text-gray-600;
+}
+.out {
+  @apply border-2;
+}
+.active {
+  @apply text-white;
+}
+.active1 {
+  @apply text-gray-700;
+}
+.input:focus {
+  @apply outline-none;
+}
+.button1:hover {
+  @apply bg-white;
+  @apply text-gray-800;
+}
+.button2:hover {
+  @apply bg-green-200;
+  @apply text-white;
+}
+.button3:hover {
+  @apply bg-blue-400;
+  @apply text-white;
+}
+
+/* List items styles */
+ul .list-item {
+  @apply px-4 py-2;
+}
+ul .list-heading {
+  @apply bg-primary-500 px-4 py-3 text-gray-50;
+}
+ul .list-item:nth-child(even) {
+  @apply bg-primary-50;
+}
+ul .list-item:hover {
+  @apply bg-gray-100;
+}
+
+.card {
+  @apply bg-white;
+}
+.card .card-body {
+  @apply bg-white py-5 px-5;
+}
+
+.cat-card {
+  @apply bg-white rounded p-5 border;
+}
+
+.navbar {
+  @apply sticky top-0 z-30 flex justify-between items-center py-3 px-5 bg-white shadow-sm;
+}
+.navbar .nav-link {
+  @apply px-4 py-2;
+}
+.nav-link .active {
+  @apply font-semibold text-black !important;
+}
+
+.side-drawer {
+  height: 100%;
+  background: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}

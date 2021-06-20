@@ -1,0 +1,23 @@
+{
+  "name": "mini-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "config": "npm config set scripts-prepend-node-path auto",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.0.9",
+    "react": "17.0.2",
+    "react-animated-modal": "^1.1.1",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.0.4"
+  }
+}
